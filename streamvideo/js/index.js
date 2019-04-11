@@ -78,16 +78,7 @@ var waves = new SineWaves({
 
 
 window.onload=function(){
-  var obt=document.getElementById("bt");
-  var odiv=document.getElementById("thediv");
-  obt.onclick=function(){
-    if(odiv.style.display=="none"){
-      odiv.style.display="block";
-      obt.value="hide";
-    }
-    else{
-      odiv.style.display="none";
-      obt.value="display";
-    }
-  }
+  $("#red-circle-btn").click(function() {
+    $("#camera").toggle();
+  })
 }
