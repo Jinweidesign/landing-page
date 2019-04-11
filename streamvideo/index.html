@@ -17,7 +17,7 @@
 <body>
   
     <canvas id="waves"></canvas>
-    <div id="thediv" style="display:none">
+    <div id="camera" style="display:none">
       <button id="startButton"> Start </button>
         <div id="video-container">
           <video id="preview" width="500" height="350" autoplay ></video> 
@@ -53,10 +53,10 @@
 
     <div class="wrap">
       <div class="modal-container">
-        <button class="modal-button" id="bt" value="display" >Click Here</button>
+        <!-- <button class="modal-button" id="bt" value="display" >Click Here</button> -->
         <div class="container" style="transform: scale(0.6,0.6)">
           <input type="checkbox" id="btn"/>
-          <label for="btn"></label>
+          <label for="btn" id="red-circle-btn"></label>
           <div class="time">
             <div class="h_m"></div>
             <div class="s_ms"></div>
