@@ -76,9 +76,18 @@ var waves = new SineWaves({
   }
 });
 
+var status = "off";
 
 window.onload=function(){
   $("#red-circle-btn").click(function() {
     $("#camera").toggle();
-  })
+
+    if (status == "off") {
+      $("#startButton").click();
+      status = "on";
+    } else {
+      $("closeButton").click();
+      status = "off"
+    }
+  });
 }
