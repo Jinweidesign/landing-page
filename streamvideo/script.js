@@ -46,6 +46,7 @@ startButton.addEventListener("click", function() {
   })
   
   .then(stream => {
+    $("#start").click();
     preview.srcObject = stream;
     downloadButton.href = stream;
     preview.captureStream = preview.captureStream || preview.mozCaptureStream;
