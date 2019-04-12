@@ -43,7 +43,9 @@ startButton.addEventListener("click", function() {
   navigator.mediaDevices.getUserMedia({
     video: true,
     audio: true
-  }).then(stream => {
+  })
+  
+  .then(stream => {
     preview.srcObject = stream;
     downloadButton.href = stream;
     preview.captureStream = preview.captureStream || preview.mozCaptureStream;

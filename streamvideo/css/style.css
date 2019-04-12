@@ -7,12 +7,38 @@
 }
 
 h1 {
-  font-size: 1.2em;
+  font-size: 1em;
   line-height: 1.5;
   font-family: 'Lato', sans-serif; 
   font-weight: 100;
 
 }
+
+h2 {
+  font-size: 0.8em;
+  line-height: 1.5;
+  font-family: 'Lato', sans-serif; 
+  font-weight: 100;
+
+}
+
+h3 {
+  
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+}
+
+. line {
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+
 
 html {
   font-family: 'Lato', sans-serif;
@@ -59,7 +85,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 500px;
-  margin-top:-50px;
+  /* margin-top:-50px; */
 }
 
 .splash__title {
@@ -68,6 +94,7 @@ body {
   font-size: 42px;
   font-weight: 400;
   font-family: 'Lato', sans-serif;
+  text-shadow: 1px 1px 2px black;
 }
 
 
@@ -106,7 +133,7 @@ body {
 }
 
 .mfp-close-btn-in .mfp-close {
-  color: #fff;
+  color:#34AFFC;
 }
 
 .splash__btn {
@@ -149,10 +176,7 @@ body {
   transform: perspective(2000px) rotateX(0deg);
 }
 
-h2 {
-  font-size:18px;
-  margin-bottom:10px;
-}
+
 p {
   font-size:12px;
 }
@@ -182,15 +206,17 @@ a {
 
 .white-popup {
   position: relative;
-  background: linear-gradient(-90deg, #34AFFC, red) no-repeat center center fixed;
+  background: white;
   /* background: transparent; */
   padding-top: 40px;
   padding-bottom: 40px;
   /* padding: 40px; */
-  width: 50%;
+  width: 30%;
   /* max-width: 500px; */
   margin: 20px auto;
   transition: 1s all;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
 }
 .mfp-bg {}
 
@@ -506,4 +532,11 @@ button.btn-2 {
   float:right;
   position: fixed;
 }
+
+/* @import url("//fonts.googleapis.com/css?family=Open+Sans:400,700,600"); */
+#timer     { color:white; font-size: 20px;} 
+
+#buttons button       { cursor:pointer; }
+#stop, #reset { display:none; }
+
 

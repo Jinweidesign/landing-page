@@ -55,6 +55,10 @@ var waves = new SineWaves({
       wavelength: 400
     }
   ],
+
+  // Timer
+ 
+
  
   // Called on window resize
   resizeEvent: function() {
@@ -85,9 +89,11 @@ window.onload=function(){
     if (status == "off") {
       $("#startButton").click();
       status = "on";
+      
     } else {
-      $("closeButton").click();
-      status = "off"
+      $("#stopButton, .open-popup-link, #stop").click();
+      status = "off";
+      
     }
   });
 }

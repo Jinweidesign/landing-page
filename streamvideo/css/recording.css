@@ -2391,7 +2391,7 @@ body .container .time > * {
   display: inline-block;
   width: 50%;
   margin: -2px;
-  color: #a2a2a2;
+  color:white;
   font-family: 'Fjalla One', sans-serif;
   font-size: 1.3em;
 }
