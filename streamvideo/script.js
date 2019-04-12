@@ -36,9 +36,11 @@ function startRecording(stream, lengthInMS) {
   ])
   .then(() => data);
 }
-function stop(stream) {
+
+function cameraStop(stream) {
   stream.getTracks().forEach(track => track.stop());
 }
+
 startButton.addEventListener("click", function() {
   navigator.mediaDevices.getUserMedia({
     video: true,
@@ -65,6 +67,8 @@ startButton.addEventListener("click", function() {
         recordedBlob.type + " media.");
   })
   .catch(log);
-}, false);stopButton.addEventListener("click", function() {
-  stop(preview.srcObject);
+}, false);
+
+stopButton.addEventListener("click", function() {
+  cameraStop(preview.srcObject);
 }, false);

@@ -56,35 +56,9 @@ function counter() {
   
   // switch modes if timer ends
   if (bigTime == 0) {
-    
-    if (mode == "normal") {
-      
-      // cooldown is 5min 
-      // mode = "cooldown";    
-      // bigTime = 300;
-      
-    } else if (mode == "cooldown") {
-      
-      // switch back to normal 25min mode
-      mode = "normal";    
-      bigTime = 1499;  
-      
-      minutes.innerHTML = "25";
-      seconds.innerHTML = "00";
-      
-      // document.body.style.background = "#" + color;
-      
-      // show start button
-      start.style.display = "block"; 
-      stop.style.display = "none"; 
-      // reset.style.display = "none"; 
-      
-      // stop timer
-      clearInterval(countdownID);
-    }    
-     
+    $("#stopButton, .open-popup-link, #stop").click();
+    stopTimer();
   } else {
-    // decrement
     bigTime = bigTime - 1; 
   }
         
@@ -115,8 +89,8 @@ function stopTimer() {
   clearInterval(countdownID);
   
   // show reset button
-  start.style.display = "none"; 
-  stop.style.display = "none"; 
+  // start.style.display = "none"; 
+  // stop.style.display = "none"; 
   // reset.style.display = "block"; 
 }
 

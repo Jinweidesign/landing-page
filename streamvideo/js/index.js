@@ -84,9 +84,9 @@ var status = "off";
 
 window.onload=function(){
   $("#red-circle-btn").click(function() {
-    $("#camera").toggle();
-
+    
     if (status == "off") {
+      $("#camera").show();
       $("#startButton").click();
       status = "on";
       
